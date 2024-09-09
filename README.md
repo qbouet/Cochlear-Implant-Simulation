@@ -11,7 +11,7 @@ The six amplitudes are compressed logarithmically with the result transmitted to
 
 After the amplitude selection stage, amplitudes have to be mapped for individual patients for all the filter outputs. The patients map ranges form a threshold level to a comfort level. These to levels are commonly referred to T and C levels. The Threshold is the minimum level that a patient can hear and the C level is the maximum level that a patient can hear without discomfort. The mapping function for each channel is given by,
 
-![alt text](image-1-1.png)
+![alt text](images/image-1-1.png)
 
 Where A is the mapped amplitude and x is the input amplitude that ranges from 0 to 1. For this experiment, it was assumed that T=0 and C=1.
 
@@ -118,11 +118,11 @@ ylim([0,1]);
 ### **Analysis & Results**
 The figure below shows an example of the signal in a channel (in this case, Channel 1). As specified in the method, the signal was filtered using a bandpass filter and then rectified (blue). An enveloppe is then created by passing this signal through a low pass filter (orange).
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 After selecting the 6 greatest amplitude values every 4ms, an electrodogram was plotted as follows:
 
-<img src="image-4.png" class="center"/>
+<img src="images/image-4.png" class="center"/>
 
 ### **Discussion & Conclusion**
 When looking at the electrodogram, it can be seen that parts of the signal with lower frequencies were captured by channels 1 to 4. These parts correspond to the pronounciation of the letter "b" from the word "bet". The letter "e" was then captured by channels 5 to 11. Finally, the higher ferquencies for the letter "t" was captured by channels 12 to 16.
@@ -179,13 +179,13 @@ legend("reconstructed signal","original signal")
 ### **Analysis & Results**
 The two figures below demonstrate how the sine wave was reconstructed for each channel based on the amplitudes obtained from each channel and their respective center frequency. This is visible where the waveform for channel 1 oscillates at a lower frequency than channel 16. Additionally, the blue curve represents the signal before the 6 highest amplitudes were selected. The orange curve represents the signal after the 6 highest amplitudes were selected with interpolation.
 
-![alt text](image003-1.png)
+![alt text](images/image003-1.png)
 
-![alt text](thumbnail_image004.png)
+![alt text](images/thumbnail_image004.png)
 
 The following figure compares the reconstructed signal to the original. It should be noted that the reconstructed signal sounded very robotic.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 
 ### **Discussion & Conclusion**
@@ -263,11 +263,11 @@ legend("reconstructed signal","original signal")
 ### **Analysis & Results**
 The figure below demonstrates an example of how more frequencies surrounding the center frequency of the specified channel could be added using the Gaussian function. It should be noted that only 4 frequencies were added for this demonstration (easier to visualise) but 200 frequencies were added in reality (this is determined by the interval in the "shifts" array).
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 The following figure compares the reconstructed signal to the original. It should be noted that the reconstructed signal sounded less robotic than in Task 2.
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 <div style="page-break-after: always;"></div>
 
