@@ -4,7 +4,7 @@
 One speech processing strategy used in cochlear implant processors is the Spectral Maxima Sound Processor (SMSP). In this scheme, the speech waveform is analyzed using a bank of 16 band-pass filters and a spectral maxima detector. A block diagram for the operation of this
 strategy is shown in Figure 1.
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 The signal from the microphone is first preprocessed by an amplifier to get a suitable dynamic range for the analogue-to-digital converter. The signal is then sent through a bank of 16 band-pass filters with center frequencies ranging from 250 to 5.4 KHz. The output of the filter is rectified and low-pass filtered with a cutoff frequency of 200 Hz. After computing all 16 filter outputs, the SMSP processor selects, at 4msec intervals, the six largest filter outputs.
 The six amplitudes are compressed logarithmically with the result transmitted to the electrode array through a radio link. The output of each of the filters is allocated to each electrode. The apical electrode is allocated to the filter with the lowest center frequency, while the basal electrode is allocated to the filter with the highest center frequency. Only the 16 most-apical electrodes are activated, while the remaining basal electrodes in the 22-electrode implant are left inactive.
